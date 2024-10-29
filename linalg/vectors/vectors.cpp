@@ -11,4 +11,10 @@ int main() {
 
     int dot = v3.dot(v4);
     std::cout << dot << std::endl;
+
+    int sum = 0;
+    for (int i = 0; i < v3.size(); ++i) {
+        sum += v3[i] * v4[i];
+    }
+    std::cout << sum << std::endl;
 }
